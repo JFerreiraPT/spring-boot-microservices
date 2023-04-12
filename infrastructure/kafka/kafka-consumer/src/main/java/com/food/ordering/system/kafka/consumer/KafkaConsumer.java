@@ -5,5 +5,5 @@ import org.apache.avro.specific.SpecificRecord;
 import java.util.List;
 
 public interface KafkaConsumer<T extends SpecificRecord> {
-    void receive(List<T> message, List<Long> keys, List<Integer> partitions, List<Long> offsets);
+    void receive(List<T> message, List<String> keys, List<Integer> partitions, List<Long> offsets);
 }
